@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Caped</string>
+    <string name="title_activity_main">Caped</string>
+    <string name="package_name">com.caped.app</string>
+    <string name="custom_url_scheme">com.caped.app</string>
+</resources>

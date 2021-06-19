@@ -1,0 +1,6 @@
+{
+  "appId": "com.caped.app",
+  "appName": "Caped",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

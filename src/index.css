@@ -1,0 +1,327 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('/public/fonts/Sofia/stylesheet.css');
+/* Fonts */
+@font-face {
+    font-family: 'Circular Std';
+    src: url('/public/fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('/public/fonts/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    font-family: 'Sofia Pro',Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+html{
+    background:#FAFAFA;
+    position:relative;
+    overflow-y:scroll;
+}
+.container{
+    max-width:88%;
+    margin:0 auto;
+  }
+  
+.logo{
+    font-family:'Circular Std',Arial, Helvetica, sans-serif !important;
+    font-weight:500;
+}
+.logo span{
+    font-family:'Circular Std',Arial, Helvetica, sans-serif !important;
+}
+.logo .circle{
+    top: -55%;
+    left: -150%;
+    z-index:-1;
+    height:2.75rem;
+    width:2.75rem;
+    transition:all ease-in-out .2s;
+
+}
+.logo{
+    cursor:default;
+    margin-left:1rem;
+}
+.logo h2{
+    position:relative;
+    font-size:1.4rem;
+    font-weight:500;
+
+
+}
+.logo h2 .aped:after{
+    transform:scaleX(1);
+    content:'';
+    height:.2rem;
+    width:.8rem;
+    background:#000;
+    position:absolute;
+    right:18%;
+    top:22%;
+    transform-origin:center right;
+}
+.logo h2 .aped{
+    margin-left:.15rem;
+}
+.heart{
+    @apply bg-white absolute top-2 right-3 rounded-full p-2;
+}
+.trending{
+    border-radius:20px;
+    background:#F4DE4D url('./images/imagebg1.png');
+    background-position:1rem 0%;
+    background-size:cover;
+    background-repeat: no-repeat;;
+}
+.trending .trending-text{
+    max-width:65%;
+    line-height:1.3;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.time{
+    border-radius:20px;
+    background:#EAE6E3 url('./images/imagebg2.png');
+    background-position:8rem 0%;
+    background-size:100%;
+    background-repeat: no-repeat;;
+}
+.time .time-text{
+    max-width:68%;
+    line-height:1.3;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.time .time-text h1{
+    line-height:1;
+
+}
+aside{
+    position:fixed;
+    background:#fff;
+    height:100%;
+    width:70%;
+    top:0;
+    inset:0;
+    left:-100%;
+    z-index:5;
+    overflow-y:scroll;
+    padding-bottom:1.5rem;
+    box-shadow: 27px -1px 20px -15px rgba(0,0,0,0.39);
+-webkit-box-shadow: 27px -1px 20px -15px rgba(0,0,0,0.39);
+-moz-box-shadow: 27px -1px 20px -15px rgba(0,0,0,0.39);
+}
+.menu .main li:not(:first-child){
+    margin-top:1.5rem;
+}
+.menu .main a{
+    position:relative;
+}
+.menu .main a::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:.15rem;
+    width:100%;
+    background:#000;
+    transform-origin:center left;
+    transform:scaleX(0) translateX(5px);
+    transition:transform .3s ease-in-out;
+}
+.menu .main a:hover:after{
+transform:scaleX(1) translateX(0);
+}
+aside .main-menu{
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+aside .bottom{
+    margin-bottom:2rem;
+}
+.searchbg{
+    opacity:1;
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    z-index:6;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.menubg{
+    display:none;
+    opacity:0;
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    z-index:4;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+.header-container .search{
+    align-self: center;
+  }
+  .heart:hover svg{
+        cursor:pointer;
+        fill:#ff304f;      
+  }
+  .header-container{
+    grid-template-columns:auto auto;
+    grid-template-rows:auto auto;
+  }
+  .header-container .search{
+    grid-column:1 / 3;
+    grid-row: 2 / 3;
+  }
+  .header-container .right{
+    justify-self:end;
+  }
+  .product-image{
+    border-radius:20px;
+    height:100%;
+    overflow:hidden;
+
+  }
+  .product-image img{
+    transform:scale(1);
+    transition:.3s ease-in-out;
+    cursor:pointer;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+  .product-image:hover img{
+    transform:scale(1.1);
+  }
+@media only screen and (min-width:768px) {
+.header-container{
+  grid-template-columns: auto 1fr .2fr;
+        grid-template-rows:auto;
+  }
+    .header-container .search{
+    grid-column:2 / 3;
+    grid-row: 1 / 2;
+    align-self:center;
+    justify-self:center;
+    width:75%;
+  }
+  aside{
+    width:40%;
+}
+
+  
+}
+
+@media only screen and (min-width:1024px) {
+    
+/* .container{
+    max-width:80%;
+} */
+main{
+    padding-bottom:2rem;
+  }
+    aside{
+        width:40%;
+    }
+    .container{
+      max-width:80%;
+    }
+    .main-container{
+      display:grid;
+      grid-template-areas:"first col1"
+                          "second col1"
+                           "col2 trending"
+                           "col2 time";
+      grid-template-columns:1fr  1fr;
+      grid-column-gap:1rem;
+    }
+    .main-container .first{
+      grid-area:first;
+    }
+    .main-container .col1{
+      grid-area:col1;
+  
+    }
+    .main-container .second{
+      grid-area:second;
+    }
+    .main-container .col2{
+      grid-area:col2;
+    }
+    .main-container .trending{
+      grid-area:trending;
+    }
+    .main-container .time{
+      grid-area:time;
+    }
+    
+.time{
+    background-position:13rem 0%;
+    background-size:90%;
+}
+}
+
+@media only screen and (min-width:1280px){
+    aside{
+        overflow-y:hidden;
+        position:static;
+        display:block;
+        width:auto;
+        background:transparent;
+    }
+    .grid-container .container{
+        max-width:100% !important;
+
+    }
+    .container{
+        max-width:84%;
+    }
+    .grid-container{
+        max-width:84%;
+        margin:0 auto;
+        grid-template-columns:.25fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width:1800px){
+    .container{
+        max-width: 70%;
+    }
+.grid-container{
+    max-width:70%;
+    grid-template-columns:.22fr 1fr;
+
+}
+
+}
+@media only screen and (max-height:620px){
+aside .main-menu{
+    height:90%;
+}
+}
