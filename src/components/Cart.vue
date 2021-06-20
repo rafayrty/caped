@@ -39,6 +39,7 @@
                     <h2 class="text-xl font-semibold text-gray-400">(2) items</h2>
 
                 </div>
+<perfect-scrollbar>
 
                 <div class="items mt-4">
 
@@ -307,6 +308,7 @@
 
 
                 </div>
+</perfect-scrollbar>
 
 
             </div>
@@ -353,7 +355,8 @@
    position:fixed;
    top:0;
    left:auto;
-   right:-100%;
+   right:0;
+   transform:translateX(100%);
    bottom:0;
    z-index:6;
 }
@@ -369,9 +372,10 @@
 .items .item-image img{
 height:45vw;
 }
-
+.ps{
+height:65vh;
+}
 .items{
-    height:65vh;
     display:grid;
     grid-template-rows:1fr;
     width:100%;
@@ -478,16 +482,16 @@ export default {
     },
     openCart(){
         let tl = gsap.timeline();
-        tl.to('.cart',{duration:.5,right:'0',ease:'power3.easeInOut'});
-        tl.to('.cartbg',{display:'block',autoAlpha:1,ease:'power3.easeInOut'},'-=.4');
-      tl.from('.items',{stagger:.2,duration:.6,autoAlpha:0,ease:'power4.easeInOut'},'-=.2')
+        tl.to('.cart',{duration:.5,translateX:'0',ease:'power4.easeIn'});
+        tl.to('.cartbg',{display:'block',autoAlpha:1,ease:'power1.easeIn'},'-=.4');
+    //   tl.from('.items',{stagger:.2,duration:.6,autoAlpha:0,ease:'power4.easeInOut'},'-=.2')
 
     },
     closeCart(){
                 let tl = gsap.timeline();
 
-       tl.to('.cart',{duration:.5,right:'-100%',ease:'power3.easeInOut'});
-       tl.to('.cartbg',{duration:.5,autoAlpha:0,ease:'power3.easeInOut'});
+       tl.to('.cart',{duration:.5,translateX:'100%',ease:'power4.easeOut'});
+       tl.to('.cartbg',{duration:.5,autoAlpha:0,ease:'power1.easeOut'});
     //    gsap.set('.cartbg',{display:'none'});
 
 
