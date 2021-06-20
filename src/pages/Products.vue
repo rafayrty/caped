@@ -17,7 +17,7 @@
                    LINEN UTILITY SUIT - RED
                 </h2>
                 <div class="product-buy flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between mt-1">
-                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$150.00</p>
+                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$190.00</p>
                 
                  <button @click="product($event,1)" class="text-sm rounded-md ml-0 lg:ml-4 w-full lg:w-auto bg-black text-white xl:ml-6 border-2 border-black p-2 px-8 focus:outline-none focus:ring-offset-2 focus:ring-offset-white focus:ring-2 focus:ring-black focus:ring-opacity-50">Buy Now</button>
 
@@ -61,7 +61,7 @@
             BRODERIE TOP - INDIGO
                 </h2>
                 <div class="product-buy flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between mt-1">
-                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$150.00</p>
+                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$180.00</p>
                 
                  <button @click="product($event,3)" class="text-sm rounded-md ml-0 lg:ml-4 w-full lg:w-auto bg-black text-white xl:ml-6 border-2 border-black p-2 px-8 focus:outline-none focus:ring-offset-2 focus:ring-offset-white focus:ring-2 focus:ring-black focus:ring-opacity-50">Buy Now</button>
 
@@ -84,7 +84,7 @@
                     BAMBOO DRESS  - PINK
                 </h2>
                 <div class="product-buy flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between mt-1">
-                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$150.00</p>
+                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$120.00</p>
                 
                  <button @click="product($event,4)" class="text-sm rounded-md ml-0 lg:ml-4 w-full lg:w-auto bg-black text-white xl:ml-6 border-2 border-black p-2 px-8 focus:outline-none focus:ring-offset-2 focus:ring-offset-white focus:ring-2 focus:ring-black focus:ring-opacity-50">Buy Now</button>
 
@@ -97,19 +97,19 @@
      <div class="product">
 
            <div class="prd-image relative">
-                <img src="../images/image2.png" @click="product($event,1)" class="w-full " alt="">
+                <img src="../images/image2.png" @click="product($event,5)" class="w-full " alt="">
                 <div class="heart">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                 </div>
             </div>
             <div class="product-info">
                 <h2 class="text-xl font-bold mt-2">
-                    FRAYED LUXE FLEECY - RED
+                    FRAYED LUXE FLEECY - BLACK
                 </h2>
                 <div class="product-buy flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between mt-1">
-                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$150.00</p>
+                <p class="price text-gray-500 font-semibold text-lg mb-1 lg:mb-0">$250.00</p>
                 
-                 <button @click="product($event,4)" class="text-sm rounded-md ml-0 lg:ml-4 w-full lg:w-auto bg-black text-white xl:ml-6 border-2 border-black p-2 px-8 focus:outline-none focus:ring-offset-2 focus:ring-offset-white focus:ring-2 focus:ring-black focus:ring-opacity-50">Buy Now</button>
+                 <button @click="product($event,5)" class="text-sm rounded-md ml-0 lg:ml-4 w-full lg:w-auto bg-black text-white xl:ml-6 border-2 border-black p-2 px-8 focus:outline-none focus:ring-offset-2 focus:ring-offset-white focus:ring-2 focus:ring-black focus:ring-opacity-50">Buy Now</button>
 
                 </div>
             </div>
