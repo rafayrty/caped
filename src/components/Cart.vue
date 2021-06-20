@@ -480,7 +480,7 @@ export default {
         let tl = gsap.timeline();
         tl.to('.cart',{duration:.5,right:'0',ease:'power3.easeInOut'});
         tl.to('.cartbg',{display:'block',autoAlpha:1,ease:'power3.easeInOut'},'-=.4');
-      tl.from('.items .item',{stagger:.3,duration:1,autoAlpha:0,translateX:'20px',ease:'power4.easeInOut'},'-=.2')
+      tl.from('.items .item',{stagger:.2,duration:.6,autoAlpha:0,translateX:'20px',ease:'power4.easeInOut'},'-=.2')
 
     },
     closeCart(){
