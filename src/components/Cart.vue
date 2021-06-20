@@ -482,7 +482,7 @@ export default {
     openCart(){
         let tl = gsap.timeline();
         tl.to('.cart',{duration:.5,translateX:'0',ease:'power4.easeIn'});
-        tl.to('.cartbg',{display:'block',autoAlpha:1,ease:'power1.easeIn'},'-=.4');
+        tl.to('.cartbg',{duration:.5,display:'block',autoAlpha:1,ease:'power1.easeIn'},'-=.4');
     //   tl.from('.items',{stagger:.2,duration:.6,autoAlpha:0,ease:'power4.easeInOut'},'-=.2')
 
     },
