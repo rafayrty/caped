@@ -4,7 +4,6 @@
 
   <div class="grid-container grid">
     <Sidebar @closeMenu="closeMenu"/>
-    <Cart/>
 <main>
   <router-view v-slot="{ Component, route }">
   <!-- Use any custom transition and fallback to `fade` -->

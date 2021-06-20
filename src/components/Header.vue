@@ -41,7 +41,7 @@
 
 
 <div class="right flex  items-center">
-  <a href="javascript:void(0);">
+  <a @click="openCart()" href="javascript:void(0);">
 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69865 5L8.09725 0.784674C9.16095 -0.234702 10.839 -0.234703 11.9027 0.784674L16.3013 5H18.847C19.4555 5 19.923 5.53899 19.8369 6.14142L18.368 16.4243C18.1568 17.9022 16.8911 19 15.3981 19H4.6019C3.10895 19 1.84318 17.9022 1.63205 16.4243L0.16307 6.14142C0.0770085 5.53899 0.544471 5 1.15302 5H3.69865ZM9.13511 1.86766C9.61861 1.4043 10.3814 1.4043 10.8649 1.86766L14.1334 5H5.86658L9.13511 1.86766ZM1.72952 6.5L3.11697 16.2121C3.22254 16.9511 3.85542 17.5 4.6019 17.5H15.3981C16.1446 17.5 16.7775 16.9511 16.883 16.2121L18.2705 6.5H1.72952Z" fill="black"/>
 </svg>
@@ -62,6 +62,8 @@
 <div class="searchbg" v-if="searching"></div>
 </transition>
 </header>
+    <Cart ref="cartComponent"/>
+
 </template>
 <style>
 .fade-enter-active,
@@ -82,15 +84,19 @@
 <script>
 import gsap from 'gsap';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
-    
+import Cart from './Cart.vue';
+
 
 export default{
   data(){
        return{
        searching:false
        }
-
+    
   },
+     components:{
+         Cart
+       },
 methods:{
   showbg(){
       this.searching = true;
@@ -135,6 +141,9 @@ var rule = CSSRulePlugin.getRule(".logo h2 .aped"),
                 tl.to('.menubg',{autoAlpha:1,duration:.3,ease:'power3.easeIn'});
     tl.to('aside',{left:'0%',duration:.5,ease:'power1.easeInOut'},'-=.3');
 
+  },
+  openCart(){
+    this.$refs.cartComponent.openCart();
   }
 }
 
