@@ -77,7 +77,7 @@
 html{
     background:#FAFAFA;
     position:relative;
-    overflow-y:auto;
+    overflow-y:scroll;
 }
 .container{
     max-width:88%;

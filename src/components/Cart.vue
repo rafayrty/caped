@@ -1,5 +1,5 @@
 <template>
-<div class="cartbg"></div>
+<div class="cartbg" @click="closeCart()"></div>
     <div class="cart">
 
 
@@ -338,7 +338,6 @@
 
 
 
-        <div class="cart-bg" @click="closeCart()"></div>
 
     </div>
 
