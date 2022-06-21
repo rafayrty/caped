@@ -1,6 +1,6 @@
 ## Caped - Ecommerce Store
 An Ecommerce Project Built Using VUE3 and Tailwindcss for frontend
-
+[Visit Now](https://gifted-curran-31ee25.netlify.app)
 ## Motivation
 I Had already worked with vue2 which was great already although Vue3 had been released and was looking quite stable. Hence, to dive into it i decided to build this also utilizing the power of Tailwindcss.
 
